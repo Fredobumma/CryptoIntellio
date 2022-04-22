@@ -1,7 +1,9 @@
 /* Basic styles */
 :root {
-  --color-primary: #802592;
-  --color-secondary: #23283f;  
+  --color-primary: #790F59;
+  --color-secondary: #1e254b;
+  --color-body: #455272;
+  --font-family: 'Nunito Sans', sans-serif;
 }
     
 html {
@@ -9,8 +11,63 @@ html {
 }
     
 body {
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 2rem;
   line-height: 1.5;
 }
     
-    
+/* Typography */
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-secondary);
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1, h2 {
+  font-weight: 900;
+}
+
+h3, h4 {
+  font-weight: 800;
+}
+
+p {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: var(--color-body);
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+   
+  h4 {
+    font-size: 2rem;
+  }
+   
+  p {
+    font-size: 1.8rem;
+  }
+}
