@@ -138,3 +138,43 @@ p {
     font-size: 1.8rem;
   }    
 }
+
+/* Lists */
+.lists {
+  color: var(--color-body);
+}
+
+.lists--styled {
+  list-style-image: url("/images/line-style.svg");
+}
+
+.lists--inline {
+  gap: 2rem;
+  list-style: none;
+}
+
+.lists--check, .lists--xmark {
+  list-style-type: none;
+}
+
+
+.lists__collate {
+  margin-right: 2rem;
+}
+
+.lists--check li, .lists--xmark li {
+  align-items: center;
+  border-bottom: 1px solid var(--color-secondary);
+  display: flex;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .lists--inline {
+    display: inline-flex;
+  }  
+
+  .lists__collate {
+    margin-right: 3rem;
+  }  
+}
