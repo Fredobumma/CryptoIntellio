@@ -1,0 +1,16 @@
+/* Basic styles */
+:root {
+  --color-primary: #802592;
+  --color-secondary: #23283f;  
+}
+    
+html {
+  font-size: 62.5%;
+}
+    
+body {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+    
+    
