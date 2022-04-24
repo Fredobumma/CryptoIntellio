@@ -205,3 +205,148 @@ p {
 .fa-solid, .fa-brands {
   color: var(--color-primary);
 }
+
+/* Navigation Bar */
+nav {
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .logo {
+  height: 8rem;
+  position: relative;
+  z-index: 2;
+}
+
+nav .lists--inline {
+  background: var(--color-primary);
+  height: 100vh;
+  left: -100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  top: 60px;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: 1;
+}
+
+nav .lists--inline li a {
+  border-radius: 30px;
+  color: #f2f2f2;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: -100%;
+  padding: 8px 0;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+nav .menu-btn .menu-icon {
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: -10px;
+  padding: 10px 30px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+nav .menu-btn .menu-icon {
+  display: block;
+}
+
+#click:checked ~ .menu-btn .menu-icon:before {
+  content: "\f00d";
+}
+
+#click:checked ~ .lists--inline {
+  left: 0;
+}
+
+.lock-scroll {
+  overflow: hidden;
+}
+
+nav .lists--inline li {
+  margin: 40px 0;
+  width: 100%;
+}
+
+#click:checked ~ .lists--inline li a {
+  margin-left: 0px;
+}
+
+nav .lists--inline li a:active,
+nav .lists--inline li a:hover {
+  color: #ceb0c5;
+}
+
+nav .lists--inline .btn {
+  background-color: #f2f2f2;
+  color: var(--color-primary);
+  margin: auto;
+  padding: 1rem 5rem;
+  width: fit-content;
+}
+
+nav .lists--inline .btn:hover {
+  background-color: #ceb0c5;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    flex-wrap: nowrap;
+  }
+
+  nav .menu-btn .menu-icon {
+    display: none;
+  }
+
+  nav .lists--inline {
+    background: none;
+    height: fit-content;
+    position: static;
+    top: 0;
+    transition: none;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  nav .lists--inline li {
+    margin: -7px 0 0;
+  }
+
+  nav .lists--inline li a {
+    color: var(--color-secondary);
+    display: block;
+    font-size: 15px;
+    margin: 0 1.5rem;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  nav .lists--inline li a:active,
+  nav .lists--inline li a:hover {
+    color: var(--color-primary);
+  }
+
+  nav .lists--inline .btn {
+    background-color: var(--color-primary);
+    color: #f2f2f2;
+    margin: 0.3rem 2rem 0 0;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+  }
+}
