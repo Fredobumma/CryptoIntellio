@@ -178,3 +178,30 @@ p {
     margin-right: 3rem;
   }  
 }
+
+/* Icons */
+.icons {
+  height: 30px;
+  width: 30px;
+}
+
+.icons--big {
+  height: 80px;
+  width: 80px;
+}
+
+.icon-container {
+  padding: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 2px rgba(122, 122, 122, 0.3);
+  display: inline-flex;
+}
+
+.icon-container-special .fa-solid {
+  width: 2rem;
+  text-align: center;
+}
+
+.fa-solid, .fa-brands {
+  color: var(--color-primary);
+}
