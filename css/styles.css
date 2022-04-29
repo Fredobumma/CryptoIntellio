@@ -480,3 +480,39 @@ nav .lists--inline .btn:hover {
     max-width: 400px;
   }
 }
+
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible__heading {
+  margin: 2rem 0;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.expanded__svg {
+  display: none;
+}
+
+.collapsible--expanded .collapsible__svg {
+  display: none;
+}
+
+.collapsible--expanded .expanded__svg {
+  display: block;
+}
+
+.collapsible--expanded .collapsible__content {
+  margin-top: 1rem;
+  max-height: 100vh;
+  opacity: 1;
+}
