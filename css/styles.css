@@ -516,3 +516,63 @@ nav .lists--inline .btn:hover {
   max-height: 100vh;
   opacity: 1;
 }
+
+/* FAQ */
+.faq {
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.faq--heading {
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.faq .collapsible {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto 0.5rem;
+  max-width: 900px;
+}
+
+.faq .collapsible__header {
+  padding: 1.5rem 3rem;
+}
+
+.faq__question {
+  color: #f2f2f2;
+  margin: 0;
+}
+
+.faq .collapsible__svg {
+  margin: 0 0.5rem;
+}
+
+.faq__content {
+  background-color: white;
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.faq__text {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq {
+    background-image: url("/images/faq-bg.webp");
+    background-size: cover;
+  }
+  
+  .faq--heading {
+    padding-left: 30px;
+  }
+
+  .faq--heading, .faq .collapsible {
+    margin: 0 0 0.5rem;
+    max-width: 600px;
+  }
+}
