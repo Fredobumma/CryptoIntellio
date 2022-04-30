@@ -680,3 +680,86 @@ nav .lists--inline .btn:hover {
     font-size: 1.6rem;
   }
 }
+
+/* Executive's Testimonial  */
+.testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/testimonial-bg@1x.webp");
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 2304px;
+  padding: 10rem 1rem;
+}
+
+.testimonial--container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+}
+
+.testimonial--container::-webkit-scrollbar {
+  display: none;
+}
+
+#myCarousel {
+  padding-bottom: 50px;
+}
+
+#dot0, #dot1, #dot2 {
+  background-color: #455272;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+#dot0.active, #dot1.active, #dot2.active {
+  background-color: var(--color-primary);
+}
+
+.testimonial__card {
+  padding: 0 2%;
+}
+
+.testimonial__card:first-of-type, .testimonial__card:last-of-type {
+  padding: 0 2% 0 2%;  
+}
+
+.testimonial__svg {
+  height: 40px;
+  margin: 2rem 0 0;
+  width: 40px;
+}
+
+.tesimonial__text, .testimonial__name, .testimonial__position {
+  color: var(--color-secondary);
+}
+
+.tesimonial__text {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.testimonial__name {
+  font-weight: 700;
+  margin-bottom: 0rem;
+}
+
+.testimonial__position {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.carousel-control {
+  width: 10%;
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/testimonial-bg@2x.webp");
+  }
+}
