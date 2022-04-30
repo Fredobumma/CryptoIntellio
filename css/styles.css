@@ -576,3 +576,107 @@ nav .lists--inline .btn:hover {
     max-width: 600px;
   }
 }
+
+/* Latest News Block */
+.news__heading {
+  padding: 5rem 0 8rem;
+  text-align: center;
+}
+
+#news--container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 400px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+
+.news--container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 0 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.news .card:first-of-type {
+  padding-left: 0;
+}
+
+.news .card:last-of-type {
+  padding-right: 0;
+}
+
+.news__image {
+  position: relative;
+}
+
+.news__image > img {
+  height: auto;
+  max-width: 100%;
+}
+
+.news__tag {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  bottom: 15px;
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 10px;
+}
+
+.news__info {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin: 0 1rem;
+  padding: 0 2rem;
+  white-space: nowrap;
+}
+
+.news__remark {
+  color: var(--color-primary);
+}
+
+.news__details {
+  font-size: 1.8rem;
+  padding: 0 1rem;
+}
+
+.instruction {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #news--container {
+    max-width: 650px;
+  }
+
+  .news .card {
+    max-width: 300px;
+  }
+  
+  .news__info {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #news--container {
+    max-width: 950px;
+  }
+
+  .news__details {
+    font-size: 1.6rem;
+  }
+}
