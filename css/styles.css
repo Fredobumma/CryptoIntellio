@@ -763,3 +763,80 @@ nav .lists--inline .btn:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/testimonial-bg@2x.webp");
   }
 }
+
+/* Marquee Block */
+.block-marquee.container {
+  overflow:hidden;
+}
+
+.marquee-wrapper {
+  --total-marquee-items:5;
+  height: 150px;
+  width: calc(120px * (var(--total-marquee-items)));
+  box-sizing: border-box;
+  position: relative;
+  margin: 40px auto;
+  padding: 40px 0;
+}
+
+.marquee-inner {
+  width: 200%;
+  position: absolute;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-item {
+  width: 120px;
+  display: inline-flex;
+  justify-content: center;
+  transition: all .2s ease-out;
+}
+
+.marquee-item:nth-of-type(3) {
+  bottom: -5px;
+  position: relative;
+  width: 90px;
+}
+
+.marquee-item:nth-of-type(5) {
+  position: relative;
+  bottom: -12px;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  
+  100% {
+    left: -100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .marquee-wrapper {
+    padding: 70px 0;
+  }
+  
+  .marquee-inner {
+    animation: none;
+  }
+  
+  .marquee-item {
+    transition: none;
+  }
+  
+  .marquee-box:last-of-type {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .marquee-wrapper {
+    width: calc(170px * (var(--total-marquee-items)));
+  }
+  
+  .marquee-item {
+    width: 170px;
+  }
+}
