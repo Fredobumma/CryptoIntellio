@@ -875,3 +875,112 @@ nav .lists--inline .btn:hover {
     margin-bottom: 4rem;
   }
 }
+
+/* Showcase Block */
+.showcase__different {
+  margin: 3rem 0;
+}
+
+.showcase__different .row {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.showcase__heading, .showcase__subtitle {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  max-width: 500px;
+  text-align: center;
+}
+
+.showcase__subtitle {
+  margin: 1rem auto 7rem;
+}
+
+.column.showcase__body {
+  padding: 0;
+}
+
+.showcase__bodyHeading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.column.showcase__bodyHeading {
+  flex: content;
+  padding: 1rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.showcase__body .lists--check, .showcase__body .lists--xmark {
+  padding-left: 0;
+}
+
+.showcase__body .lists--check li:last-of-type,
+.showcase__body .lists--xmark li:last-of-type {
+  border-bottom: 0;
+}
+
+.showcase__body .lists__collate {
+  padding-left: 1rem;
+}
+
+.showcase__structure {
+  background-color: #f2f2f2;
+  margin: 5rem 0 0;
+  padding: 7rem 0 10rem;
+}
+
+.showcase__structure .showcase__heading {
+  margin-bottom: 7rem;
+}
+
+.showcase__structureBody {
+  text-align: center;
+  gap: 10rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.showcase-positive, .showcase-negative {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.showcase__structureBody .icon-container {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.showcase-negative .icon-container {
+  background-color: var(--color-primary);
+}
+
+.showcase-negative .fa-arrow-down-long {
+  color: white;
+}
+
+.showcase__structure .btn {
+  margin: 10rem auto 2rem;
+}
+
+.showcase__structure .btn a {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+.showcase__body .lists--check {
+  padding: 0 0 0 1rem;
+}
+
+.showcase__body .lists--xmark {
+  padding: 0 1rem 0 0;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .showcase__structureBody {
+    max-width: 768px;
+  }
+}
