@@ -16,6 +16,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css" />
@@ -50,7 +51,7 @@
     <section class="block block-hero hero">
       <div class="hero--container grid grid--1x2">
         <header class="block--header">
-          <h1 class="hero__heading">Modern Finance and Monetary Strategy</h1>
+          <h1 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="hero__heading">Modern Finance and Monetary Strategy</h1>
           <h4 class="hero__content">
             Our community is about to lead technology by creating solutions to all
             your challenges and troubles regarding finance.
@@ -64,21 +65,22 @@
             <a href="#">Get access to premium content</a>
           </button>
         </header>
-        <picture class="hero__image">
-          <source
-            type="image/webp"
-            srcset="/images/hero@1x.webp 1x, /images/hero@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="/images/hero@1x.png 1x, /images/hero@2x.png 2x"
-          />
-          <img src="/images/hero@2x.png" alt="" />
+        <div data-aos="zoom-in-up" data-aos-duration="1000" class="image--container">
+          <picture class="hero__image">
+            <source
+              type="image/webp"
+              srcset="/images/hero@1x.webp 1x, /images/hero@2x.webp 2x"
+            />
+            <source
+              type="image/png"
+              srcset="/images/hero@1x.png 1x, /images/hero@2x.png 2x"
+            />
+            <img src="/images/hero@2x.png" alt="" />
+          </picture>
           <a href="https://youtu.be/6WZOxnYi4Cs" target="_blank"
             ><span class="icon-container"
               ><img src="/images/youtube.svg" alt="Youtube display link" /></span
           ></a>
-        </picture>
       </div>
     </section>
     <section class="block--marquee container">
@@ -204,7 +206,7 @@
     </section>
     <section class="faq">
       <h2 class="faq--heading">Frequently Asked Questions</h2>
-      <div class="collapsible collapsible--expanded">
+      <div data-aos="fade-up" class="collapsible collapsible--expanded">
         <div class="collapsible__header faq__header">
           <p class="collapsible__heading faq__question">How will all of these better my finance?</p>
           <span class="icons collapsible__svg"><embed class="icons" src="/images/faq-plus.svg" type="" /></span>
@@ -214,7 +216,7 @@
           <p class="faq__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quaerat incidunt facere amet mollitia ex qui delectus nisi dolorum libero!</p>
         </div>  
       </div>
-      <div class="collapsible">
+      <div data-aos="fade-up" class="collapsible">
         <div class="collapsible__header faq__header">
           <p class="collapsible__heading faq__question">Can you explain the effects during the bearish market?</p>
           <span class="icons collapsible__svg"><embed class="icons" src="/images/faq-plus.svg" type="" /></span>
@@ -224,7 +226,7 @@
           <p class="faq__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, iure explicabo? Rem ea illo tenetur, autem perferendis nisi dicta libero!</p>
         </div>
       </div>
-      <div class="collapsible">
+      <div data-aos="fade-up" class="collapsible">
         <div class="collapsible__header faq__header">
           <p class="collapsible__heading faq__question">What is my daily withdrawal limit in a day?</p>
           <span class="icons collapsible__svg"><embed class="icons" src="/images/faq-plus.svg" type="" /></span>
@@ -234,7 +236,7 @@
           <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nihil dicta sit porro modi a tempore sunt quas. Sapiente, qui.</p>
         </div>
       </div>
-      <div class="collapsible">
+      <div data-aos="fade-up" class="collapsible">
         <div class="collapsible__header faq__header">
           <p class="collapsible__heading faq__question">What does the fee structure look like?</p>
           <span class="icons collapsible__svg"><embed class="icons" src="/images/faq-plus.svg" type="" /></span>
@@ -464,7 +466,7 @@
             </button>
           </div>
         </div>
-        <picture class="column footer__image">
+        <picture data-aos="fade-left" class="column footer__image">
           <source
             type="image/webp"
             srcset="/images/about_us@1x.webp 1x, /images/about_us@2x.webp 2x"
@@ -497,7 +499,7 @@
             </button>
           </div>
         </div>
-        <picture class="column footer__image">
+        <picture data-aos="fade-right" class="column footer__image">
           <source
             type="image/webp"
             srcset="/images/history@1x.webp 1x, /images/history@2x.webp 2x"
@@ -534,7 +536,7 @@
             </button>
           </div>
         </div>
-        <picture class="column footer__image">
+        <picture data-aos="fade-left" class="column footer__image">
           <source
             type="image/webp"
             srcset="/images/locations@1x.webp 1x, /images/locations@2x.webp 2x"
@@ -562,8 +564,8 @@
           <div class="column">
             <div class="footer__content">
               <div class="footer__body">
-                  <h3 class="footer__heading feedback__heading feedback__ImageHeading">SALES</h3>
-                <picture class="footer__image feedback__image">
+                <h3 class="footer__heading feedback__heading feedback__ImageHeading">SALES</h3>
+                <picture data-aos="flip-up" class="footer__image feedback__image">
                   <source
                   type="image/webp"
                   srcset="/images/sales@1x.webp 1x, /images/sales@2x.webp 2x"
@@ -574,8 +576,8 @@
                   />
                   <img src="/images/sales@2x.png" alt="" />
                 </picture>
-                  <h3 class="footer__heading feedback__heading feedback__ImageHeading">SUPPORT & SERVICE</h3>
-                <picture class="footer__image feedback__image">
+                <h3 class="footer__heading feedback__heading feedback__ImageHeading">SUPPORT & SERVICE</h3>
+                <picture data-aos="flip-down" class="footer__image feedback__image">
                   <source
                     type="image/webp"
                     srcset="/images/support&service@1x.webp 1x, /images/support&service@2x.webp 2x"
@@ -604,6 +606,10 @@
         <p class="copyright">Copyright ©️ 2022 by Manfred Obumma</p>
       </div>
     </footer>
-    <script src="/js/main.js"></script>        
+    <script src="/js/main.js"></script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>       
   </body>
 </html>
