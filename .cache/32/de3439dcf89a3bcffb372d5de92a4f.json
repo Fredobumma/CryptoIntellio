@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-{"id":"images/monitor-screen.svg","dependencies":[],"generated":{"js":"module.exports = \"/d267d7747bd6fcc29a7b1d7aa5599b4f.svg\";"},"sourceMaps":null,"error":null,"hash":"ab71d33db9c872391c2925599b592dbf","cacheData":{"env":{}}}
-||||||| parent of 38d9e45 (SEO and Document(code) Validation)
-=======
-{"id":"images/monitor-screen.svg","dependencies":[{"name":"C:\\Users\\HP\\Downloads\\Webs\\cryptoIntellio\\package.json","includedInParent":true,"mtime":1656776227488}],"generated":{"js":"module.exports = \"/d267d7747bd6fcc29a7b1d7aa5599b4f.svg\";"},"sourceMaps":null,"error":null,"hash":"ab71d33db9c872391c2925599b592dbf","cacheData":{"env":{}}}
->>>>>>> 38d9e45 (SEO and Document(code) Validation)
+{"id":"images/monitor-screen.svg","dependencies":[{"name":"C:\\Users\\HP\\Downloads\\Webs\\cryptoIntellio\\package.json","includedInParent":true,"mtime":1656989927706}],"generated":{"js":"module.exports = \"/d267d7747bd6fcc29a7b1d7aa5599b4f.svg\";"},"sourceMaps":null,"error":null,"hash":"ab71d33db9c872391c2925599b592dbf","cacheData":{"env":{}}}

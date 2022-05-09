@@ -1,4 +1,6 @@
 /* Basic styles */
+@import url("./normalize.css");
+
 :root {
   --color-body: #455272;
   --color-primary: #790F59;
@@ -6,6 +8,7 @@
   --font-family: 'Nunito Sans', sans-serif;
   --max-width-big: 230rem;
   --max-width-small: 125rem;
+  --box-sizing: border-box;
 }
     
 html {
@@ -200,7 +203,7 @@ p {
 nav {
   align-content: center;
   align-items: center;
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing);
   display: flex;
   flex-wrap: wrap;
   height: 70px;
@@ -251,6 +254,7 @@ nav .lists--inline li a {
 nav .menu-btn .menu-icon {
   color: var(--color-primary);
   cursor: pointer;
+  display: block;
   font-size: 22px;
   margin-top: -10px;
   padding: 10px 20px;
@@ -260,8 +264,8 @@ input[type="checkbox"] {
   display: none;
 }
 
-nav .menu-btn .menu-icon {
-  display: block;
+.lock-scroll {
+  overflow-y: hidden;
 }
 
 #click:checked ~ .menu-btn .menu-icon:before {
@@ -270,10 +274,7 @@ nav .menu-btn .menu-icon {
 
 #click:checked ~ .lists--inline {
   left: 0;
-}
-
-.lock-scroll {
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 nav .lists--inline li {
@@ -299,6 +300,10 @@ nav .lists--inline .btn {
   width: fit-content;
 }
 
+#click:checked ~ .lists--inline li a.btn {
+  margin-bottom: 4rem;
+}
+
 #click:checked ~ .lists--inline li a.btn:hover,
 #click:checked ~ .lists--inline li a.btn:active,
 #click:checked ~ .lists--inline li a.btn:focus {
@@ -312,10 +317,6 @@ nav .lists--inline .btn {
 
   nav .menu-btn .menu-icon {
     display: none;
-  }
-
-  .lock-scroll {
-    overflow: auto;
   }
 
   nav .lists--inline {
@@ -403,12 +404,9 @@ nav .lists--inline .btn {
 
 /* Hero Block */
 .block.hero {
+  background: #f2f2f2;
   margin-top: -1rem;
   padding: 5rem 0 2rem;
-}
-
-.block-hero {
-  background: #f2f2f2;
 }
 
 .hero .grid {
@@ -440,7 +438,7 @@ nav .lists--inline .btn {
 }
 
 .hero .image--container {
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing);
   margin: auto 0;
   padding: 1rem 1.5rem 3rem;
 } 
@@ -610,8 +608,13 @@ nav .lists--inline .btn {
 }
 
 /* Latest News Block */
+.news {
+  overflow-x: hidden;
+  padding-top: 2.5rem;
+}
+
 .news__heading {
-  padding: 10rem 0 5rem;
+  padding: 7.5rem 0 5rem;
   text-align: center;
 }
 
@@ -726,21 +729,27 @@ nav .lists--inline .btn {
 .testimonial {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/testimonial-bg@1x.webp");
   background-size: cover;
+  box-sizing: var(--box-sizing);
   margin: 0 auto;
   max-width: var(--max-width-big);
+  overflow-x: hidden;
   padding: 10rem 1rem;
 }
 
 .testimonial--container {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 30px;
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing);
   max-width: 450px;
   padding: 0;
 }
 
 #myCarousel {
   padding-bottom: 50px;
+}
+
+.carousel-inner {
+  box-sizing: var(--box-sizing);
 }
 
 #dot0, #dot1, #dot2 {
@@ -754,6 +763,7 @@ nav .lists--inline .btn {
 }
 
 .testimonial__card {
+  box-sizing: var(--box-sizing);
   padding: 0 2%;
 }
 
@@ -767,11 +777,12 @@ nav .lists--inline .btn {
   width: 40px;
 }
 
-.tesimonial__text, .testimonial__name, .testimonial__position {
+.testimonial__text, .testimonial__name, .testimonial__position {
   color: var(--color-secondary);
 }
 
-.tesimonial__text {
+.testimonial__text {
+  box-sizing: var(--box-sizing);
   font-size: 1.8rem;
   margin-top: 1rem;
 }
@@ -798,12 +809,13 @@ nav .lists--inline .btn {
 
 /* Marquee Block */
 .block--marquee.container {
-  overflow:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .marquee-wrapper {
   --total-marquee-items:5;
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing);
   height: 150px;
   margin: 40px auto 0;
   padding: 70px 0 0;
@@ -1046,6 +1058,7 @@ nav .lists--inline .btn {
   background-color: var(--color-primary);
   margin: 0 auto;
   max-width: 195rem;
+  overflow-x: hidden;
   padding-top: 2rem;
 }
 
@@ -1054,7 +1067,7 @@ nav .lists--inline .btn {
 }
 
 .footer__content {
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1087,6 +1100,7 @@ nav .lists--inline .btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
   padding: 0 2rem 10rem;
 }
 
