@@ -1,4 +1,4 @@
 # cryptoIntellio
 Crypto-Intellisense app
 
-# Random UI design using Html and CSS 
+# A simple UI design using Html and CSS 
